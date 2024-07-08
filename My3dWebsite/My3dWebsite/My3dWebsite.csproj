@@ -28,8 +28,10 @@
 
   <ItemGroup>
     <Content Include="Images\profile_girl1.png" />
+    <Content Include="Images\profile_girl2.png" />
     <Content Include="Images\profile_man1.png" />
     <Content Include="Images\profile_man2.png" />
+    <Content Include="Images\profile_man3.png" />
   </ItemGroup>
 
   <ItemGroup>

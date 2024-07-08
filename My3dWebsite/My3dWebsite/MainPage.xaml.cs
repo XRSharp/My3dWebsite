@@ -38,7 +38,7 @@ namespace My3dWebsite
             double a = -(1 - scrollValue / 400) * 40 - 25;
 
             Root.CameraPosition = new Point3D(x, 0.2, 0.3);
-            Root.CameraRotation = new Point3D(a, r - 30, 0);
+            Root.CameraRotation = new Point3D(a, r - 50, 0);
             //OrbitControls.SetTarget()
         }
 
