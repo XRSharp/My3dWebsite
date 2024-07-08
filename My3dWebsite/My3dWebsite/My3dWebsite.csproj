@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="XRSharp" Version="0.1.6-preview-2024-06-24-064915-7c7b9897" />
+    <PackageReference Include="XRSharp" Version="0.1.7-preview-2024-07-08-142404-f8249cab" />
     <PackageReference Include="XRSharp.CommunityToolkit" Version="0.1.6-*" />
   </ItemGroup>
 
@@ -24,6 +24,12 @@
     <Compile Include="EmployeesViewModel.cs" />
     <Compile Include="EmployeeViewModel.cs" />
     <Compile Include="MainPage.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\profile_girl1.png" />
+    <Content Include="Images\profile_man1.png" />
+    <Content Include="Images\profile_man2.png" />
   </ItemGroup>
 
   <ItemGroup>

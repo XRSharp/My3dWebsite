@@ -14,7 +14,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all" />
-    <PackageReference Include="XRSharp" Version="0.1.6-preview-2024-06-24-064915-7c7b9897" />
+    <PackageReference Include="XRSharp" Version="0.1.7-preview-2024-07-08-142404-f8249cab" />
   </ItemGroup>
 
   <ItemGroup>

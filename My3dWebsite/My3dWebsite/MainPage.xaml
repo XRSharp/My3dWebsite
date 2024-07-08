@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:My3dWebsite"
       xmlns:xr="http://xrsharp.io/xr"
       Foreground="#CCFFFFFF">
-    <Grid> 
+    <Grid Width="930"> 
         <ScrollViewer x:Name="RootScrollViewer">
             <Grid>
                 <!--<Grid.Background>
@@ -87,6 +87,11 @@ xr:OrbitControls.Target="0 0 0"-->
                 </xr:Canvas3D.DataContext>
 
                 <xr:ItemsControl3D xr:Canvas3D.Y="0.1" ItemsSource="{Binding Employees}">
+                    <xr:ItemsControl3D.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <xr:StackPanel3D Orientation="ZAxis"/>
+                        </ItemsPanelTemplate>
+                    </xr:ItemsControl3D.ItemsPanel>
                     <xr:ItemsControl3D.ItemTemplate>
                         <DataTemplate>
                             <xr:StackPanel3D x:Name="CardRoot" Orientation="ZAxis" SizeX="0.1" SizeY="0.1" SizeZ="0.03">
@@ -130,15 +135,10 @@ xr:OrbitControls.Target="0 0 0"-->
                                 </i:Interaction.Triggers>
                                 <xr:Box x:Name="InvisibleItem" AlignmentX="Stretch" AlignmentY="Stretch" AlignmentZ="Stretch" SizeZ="0.005" Color="#0000FF" Opacity="0.001"/>
                                 <xr:Box x:Name="CardBackground" SizeX="0.1" SizeY="0.1" SizeZ="0.01" AlignmentY="End" Color="White" />
-                                <xr:Text3D Text="{Binding FirstName}"  FontSize="0.015" Color="Black" AlignmentY="End" Thickness="0.005"/>
+                                <xr:Text3D Text="{Binding FirstName}"  FontSize="0.015" Color="Black" AlignmentY="End" Thickness="0.002"/>
                             </xr:StackPanel3D>
                         </DataTemplate>
                     </xr:ItemsControl3D.ItemTemplate>
-                    <xr:ItemsControl3D.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <xr:StackPanel3D Orientation="ZAxis"/>
-                        </ItemsPanelTemplate>
-                    </xr:ItemsControl3D.ItemsPanel>
                 </xr:ItemsControl3D>
 
                 <!--<xr:Sphere Color="Red" Radius="0.1"/>
