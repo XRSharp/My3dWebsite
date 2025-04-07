@@ -80,7 +80,7 @@
                     <!-- Set the appearance of each employee card -->
                     <xr:ItemsControl3D.ItemTemplate>
                         <DataTemplate>
-                            <xr:StackPanel3D x:Name="CardRoot" Orientation="ZAxis" SizeX="0.1" SizeY="0.1" SizeZ="0.03">
+                            <xr:StackPanel3D x:Name="CardRoot" Orientation="ZAxis" SizeX="0.1" SizeY="0.1" SizeZ="0.03" xr:Canvas3D.IsDraggable="True">
 
                                 <!-- Animations -->
                                 <i:Interaction.Triggers>
@@ -134,9 +134,9 @@
                 </xr:ItemsControl3D>
 
                 <!-- Additional 3D elements for decoration -->
-                <xr:Sphere Color="#7079b9" Radius="0.1" xr:Canvas3D.Z="0.2" xr:Canvas3D.Y="0.1" xr:Canvas3D.X="0.47"/>
+                <!--<xr:Sphere Color="#7079b9" Radius="0.1" xr:Canvas3D.Z="0.2" xr:Canvas3D.Y="0.1" xr:Canvas3D.X="0.47"/>
                 <xr:Sphere Color="#7079b9" Radius="0.07" xr:Canvas3D.Z="-0.2" xr:Canvas3D.Y="-0.1"/>
-                <xr:Cylinder Color="#7079b9" SizeY="1" Radius="0.014" xr:Canvas3D.Z="0.2" xr:Canvas3D.Y="0" Rotation="45 0 0"/>
+                <xr:Cylinder Color="#7079b9" SizeY="1" Radius="0.014" xr:Canvas3D.Z="0.2" xr:Canvas3D.Y="0" Rotation="45 0 0"/>-->
             </xr:Canvas3D>
         </xr:Root3D>
     </Grid>
