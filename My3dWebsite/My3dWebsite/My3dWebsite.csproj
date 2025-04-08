@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="XRSharp" Version="0.1.7-preview-2024-07-08-142404-f8249cab" />
-    <PackageReference Include="XRSharp.CommunityToolkit" Version="0.1.6-*" />
+    <PackageReference Include="XRSharp" Version="0.1.7-preview-2025-04-05-083328-71b8dece" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Fonts\rechargebd.otf" />    
+    <Resource Include="Fonts\rechargebd.otf" />    
   </ItemGroup>
 
 </Project>

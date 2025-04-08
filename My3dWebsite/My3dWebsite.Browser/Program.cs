@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Net.Http;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace My3dWebsite.Browser
 {
@@ -13,20 +9,8 @@ namespace My3dWebsite.Browser
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
-
-            builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
             var host = builder.Build();
             await host.RunAsync();
-        }
-
-        public static void RunApplication()
-        {
-            Application.RunApplication(async () =>
-            {
-                await XRSharp.Root3D.Initialize();
-                var app = new My3dWebsite.App();
-            });
         }
     }
 }
